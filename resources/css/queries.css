@@ -123,12 +123,6 @@
     .works-step { margin-bottom: 20px; }
     .works-step:last-of-type { margin-bottom: 20px; }
     
-    .row {
-    max-width: 400px;
-    margin: 0 auto;
-    z-index: 5;
-    padding-top: 0px;
-    }
     .main img{
     width: 100px;
     height: auto;
@@ -149,8 +143,8 @@
         display: none;
     }
     .mobile-nav-icon {
-    margin-top: 40px;
-    margin-right: 20px; 
+    margin-top: 5px;
+    margin-right: 5px;
     }
 }
 
