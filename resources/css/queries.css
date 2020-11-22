@@ -133,18 +133,24 @@
     width: 100px;
     height: auto;
     margin-top: 45px;
+    margin-left: 10px;
     }
-    
+    .gotodozy {
+    top: 250px;
+    }
     .floating-dozy {
     width: 50%;
     margin: 200px auto;
     }
-    
     .gotodozy img {
     width: 150px;
     }
     #layer {
         display: none;
+    }
+    .mobile-nav-icon {
+    margin-top: 40px;
+    margin-right: 10px;
     }
 }
 
