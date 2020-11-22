@@ -137,6 +137,17 @@
     .foot {
     margin-top: 20px;
     }
+    
+    h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+    .icon-big {
+    font-size: 200%;
+}
+    .social-links {
+        margin-right: 5px;
+    }
 }
 
 
