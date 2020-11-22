@@ -14,7 +14,10 @@ Orange color: #e67e22
     box-sizing: border-box;
 }
 
-html,
+html {
+    position: relative;
+    min-height: 100%;
+}
 body {
     background-color: #fff;
     color: #555;
@@ -228,7 +231,7 @@ header {
     height: 100px;
     width: auto;
     float: left;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .logo-black { 

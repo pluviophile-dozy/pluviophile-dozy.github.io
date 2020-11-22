@@ -826,7 +826,7 @@ footer p {
 }
 
 .logolol {
-    
+    min-height: 100%;margin-bottom: -50px;
 }
 
 .foot {
