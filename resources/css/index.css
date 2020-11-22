@@ -1,4 +1,4 @@
-/*
+~`/*
 Orange color: #e67e22
 
 */
@@ -139,6 +139,14 @@ a:visited {
     border-bottom: 1px solid #e67e22;
     -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
+}
+
+.gotodozy a {
+    border: none;
+}
+
+.gotodozy a:hover {
+    border: none;
 }
 
 a:hover,
@@ -369,6 +377,22 @@ cite img {
     100%{margin-top: 0%;}
 }
 
+.gotodozy {
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+.gotodozy img {
+    width: 300px;
+    animation-name: goto; 
+    animation-duration: 3s;
+}
+
+@keyframes goto {
+    0%{margin-right: -200px;}
+    100%{margin-right: 0px;}
+}
 
 
 /* ----------------------------------------------- */
@@ -498,3 +522,4 @@ footer p {
 .all {
 
 }
+

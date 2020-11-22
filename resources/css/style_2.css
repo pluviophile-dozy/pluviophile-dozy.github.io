@@ -97,7 +97,8 @@ h3 {
 }
 
 .world_row h3{
-    font-size: 35px;
+    font-size: 30px;
+    text-align: center;
 }
 
 h2:after {
@@ -702,6 +703,11 @@ footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+.world_row p {
+    font-size: 16px;
+    text-align: center;
 }
 
 
