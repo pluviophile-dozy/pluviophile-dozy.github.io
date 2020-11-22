@@ -136,7 +136,7 @@
     margin-left: 10px;
     }
     .gotodozy {
-    top: 250px;
+    top: 200px;
     }
     .floating-dozy {
     width: 50%;
@@ -150,7 +150,7 @@
     }
     .mobile-nav-icon {
     margin-top: 40px;
-    margin-right: 10px;
+    margin-right: 20px; 
     }
 }
 
