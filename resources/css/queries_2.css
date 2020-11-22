@@ -6,9 +6,6 @@
     }
     
     .row { padding: 0 2%; max-width: 900px;}
-    .floating-dozy {
-    margin: 250px auto;
-    }
 }
 
 
@@ -34,25 +31,31 @@
         margin-right: 5px;
     }
     .row {
-    max-width: 680px;
+    max-width: 700px;
     margin: 0 auto;
     z-index: 5;
     padding-top: 0px;
     }
-    .main img{
-    width: 150px;
-    height: auto;
-    margin-top: 45px;
+    .logolol img{
+    width: 100px;
+    margin-top: 18px;
     }
     
-    .floating-dozy {
-    margin: 150px auto;
+    .main-nav {
+    margin-top: 30px;
     }
     
-    .gotodozy img {
-    width: 200px;
+    .foot {
+    margin-top: 20px;
+}
+    .mobile-nav-icon {
+        margin-top: 5px;
     }
-
+    
+    .mobile-nav-icon i {
+        color: black;
+    }
+    
     .contact-form { width: 80%; }
 }
 
@@ -97,7 +100,7 @@
     .sticky .main-nav li a:link,
     .sticky .main-nav li a:visited { padding: 10px 0; }
     .sticky .mobile-nav-icon { margin-top: 10px; }
-    .sticky .mobile-nav-icon i { color: #fff; }
+    .sticky .mobile-nav-icon i { color: #555; }
     
     
     
@@ -122,30 +125,15 @@
     
     .works-step { margin-bottom: 20px; }
     .works-step:last-of-type { margin-bottom: 20px; }
-    
-    .row {
-    max-width: 400px;
-    margin: 0 auto;
-    z-index: 5;
-    padding-top: 0px;
-    }
-    .main img{
-    width: 100px;
-    height: auto;
-    margin-top: 45px;
+    .mobile-nav-icon {
+        margin-top: 5px;
     }
     
-    .floating-dozy {
-    width: 50%;
-    margin: 200px auto;
+    .mobile-nav-icon i {
+        color: black;
     }
-    
-    .gotodozy img {
-    width: 150px;
-    }
-    #layer {
-        display: none;
-    }
+    .foot {
+    margin-top: 20px;
 }
 
 
