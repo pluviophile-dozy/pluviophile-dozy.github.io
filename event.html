@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style_2.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries_2.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>플루비오파일</title>
+        
+    </head>
+    <body>
+        <div class="overlay">
+  <canvas id="world"></canvas>
+  <div class="winner_cont">
+  <h1 id="winner"></h1></div>
+  <svg id="close" aria-hidden="true" data-prefix="far" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-3x"><path fill="white" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z" class=""></path></svg>
+</div>
+        <header>
+            <nav>
+                <div class="row logolol">
+                    <a href="index.html"><img src="resources/img/logo_plu_black.png" class="logo"></a>
+                    <a href="index.html"><img src="resources/img/logo_plu_black.png" alt="Omnifood logo" class="logo-black"></a>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="index.html">Main</a></li>
+                        <li ><a href="about.html">About</a></li>
+                        <li><a href="dozy.html">Dozy</a></li>
+                        <li class="active"><a href="contact.html">COntact</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>            
+        </header>
+        
+         <div class="namepicker">
+      <p>이벤트 참가자 명단:</p>
+      <input id="names" type="text" placeholder="">
+      <a href="#" id="pick">당첨자 뽑기</a>
+    </div>
+        <section class="section-form">
+            <div class="row js--wp-1">
+                <h2>Contact us</h2>
+            </div>
+            <div class="row js--wp-1">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">이름</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">이메일</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>뉴스레터</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked> 네, 받을게요
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>메세지</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder=""></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-1-of-3 mid">
+                            <input type="button" onclick="sendEmail()" value="보내기">
+                        </div>
+                        <div class="col span-1-of-3"></div>
+                    </div>
+                </form>
+                
+            </div>
+        </section>
+        
+                <footer>
+            <div class="row foot">
+                <div class="col span-1-of-2">
+                    Copyright © Pluviophile All Rights Reserved
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/dozing_dozy-105121864754195/"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/dozing_dozy/"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/resources/js/random.js"></script>
+
+</html>
