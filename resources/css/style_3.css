@@ -20,6 +20,15 @@ Orange color: #e67e22
     padding: 0;
     box-sizing: border-box;
 }
+
+.row img {
+    width: 100%;
+}
+
+.logolol img{
+    width: 200px;
+    height: auto;
+}
 html {
     position: relative;
     min-height: 100%;
