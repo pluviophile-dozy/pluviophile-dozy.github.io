@@ -30,7 +30,7 @@ $("#pick").click(function() {
   var shuffled = shuffle(nameArray);
   
   // Get the first 50 winners
-  var winner = shuffled.slice(0,50);
+  var winner = shuffled.slice(0,5);
 //  var winner = nameArray[Math.floor(Math.random()*nameArray.length)];
 
   // Display winner
