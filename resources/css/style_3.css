@@ -611,3 +611,8 @@ footer p {
     font-size: 16px;
     text-align: center;
 }
+
+.res {
+    font-weight: 1000;
+    color: #6f4698;
+}
