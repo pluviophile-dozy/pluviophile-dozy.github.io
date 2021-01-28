@@ -1,0 +1,10 @@
+background:
+  - title: '달밤의 도지'
+    mobile: 'illust1.png'
+    tablet: 'illust1.png'
+  - title: '반짝이는 물고기를 찾을거야'
+    mobile: 'illust2.png'
+    tablet: 'illust2.png'
+  - title: '코코아가 좋아'
+    mobile: 'illust3.png'
+    tablet: 'illust3.png'
