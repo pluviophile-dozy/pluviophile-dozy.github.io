@@ -51,15 +51,15 @@
                     
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="name">구매 플랫폼</label>
+                            <label for="platform">구매 플랫폼</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="텀블벅" required>
+                            <input type="text" name="platform" id="platform" placeholder="텀블벅" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="email">이름</label>
+                            <label for="name">이름</label>
                         </div>
                         <div class="col span-2-of-3">
                             <input type="text" name="name" id="name" placeholder="김도지" required>
@@ -67,10 +67,10 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="email">연락처</label>
+                            <label for="tel">연락처</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="010-XXXX-XXXX" required>
+                            <input type="text" name="tel" id="tel" placeholder="010-XXXX-XXXX" required>
                         </div>
                     </div>
                     <div class="row">
@@ -78,8 +78,8 @@
                             <label>문의</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked> A/S 신청 <br>
-                            <input type="checkbox" name="news" id="news"> 교환 신청
+                            <input type="checkbox" name="as" id="as" checked> A/S 신청 <br>
+                            <input type="checkbox" name="exchange" id="exchange"> 교환 신청
                         </div>
                     </div>
                     <div class="row">
@@ -90,14 +90,14 @@
                             <textarea name="message" placeholder=""></textarea>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>증빙자료 첨부</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="file" name="news" id="news">
-                        </div>
-                    </div>
+<!--                    <div class="row">-->
+<!--                        <div class="col span-1-of-3">-->
+<!--                            <label>증빙자료 첨부</label>-->
+<!--                        </div>-->
+<!--                        <div class="col span-2-of-3">-->
+<!--                            <input type="file" name="file" id="file">-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <div class="row">
                     <div class="as-content send">신청 후 1 영업일 이내로 안내 문자를 보내드립니다.</div>
                     </div>
@@ -147,34 +147,20 @@
             emailjs.init("user_FHcm6IarN4nZTRxxaHUHd");
         })();
 
-        // 정규식을 이용하여 이메일을 체크하는 함수
-        function isEmail(email){
-
-            const regex = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
-
-            return regex.test(email);
-        }
-
         // 이메일 보내기 함수
         function sendEmail() {
 
             // input 값 받아오기
+            const platform = document.getElementsByName('platform')[0].value;
             const name = document.getElementsByName('name')[0].value;
-            const email = document.getElementsByName('email')[0].value;
-            const news = document.getElementsByName('news')[0].checked; // 체크박스는 true / false
+            const tel = document.getElementsByName('tel')[0].value;
+            const as = document.getElementsByName('as')[0].checked; // 체크박스는 true / false
+            const exchange = document.getElementsByName('exchange')[0].checked; // 체크박스는 true / false
             const message = document.getElementsByName('message')[0].value;
 
             // 양식 검증 : 빈칸이 있는지 체크 + 이메일 양식 체크
             if(name === ''){
                 alert('이름을 입력해 주세요.')
-                return;
-            }
-            if(email === ''){
-                alert('이메일을 입력해 주세요.')
-                return;
-            }
-            if(!isEmail(email)){
-                alert('올바른 이메일을 입력해 주세요.')
                 return;
             }
             if(message === ''){
@@ -184,14 +170,16 @@
 
             // emailJS로 보낼 파라미터 변수
             const templateParams = {
-                name: name,
-                email: email,
-                news: news,
-                message: message,
+                platform,
+                name,
+                tel,
+                as,
+                exchange,
+                message,
             }
 
             // emailJS 요청 보내기 / 응답 처리
-            emailjs.send('service_lj34lrf', 'template_o81tmeq', templateParams)
+            emailjs.send('service_lj34lrf', 'template_1f8am15', templateParams)
                 .then((res) => {
                     // 성공
                     console.log('success :', res.text);
