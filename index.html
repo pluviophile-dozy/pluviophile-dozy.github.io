@@ -12,23 +12,63 @@
         <link rel="stylesheet" type="text/css" href="static/css/queries.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         <title>플루비오파일</title>
+    <style>
+body { 
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('static/css/img/back_down.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+    background-size: cover;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #ffffff;
+}
+        
+.active {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff;
+}
+        
+.res {
+    font-weight: 1000;
+    color: #ffecb9;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+    </style>    
     </head>
     <body>
         <header>
             <nav>
-                <div class="row main">
-                    <a href="index.html"><img src="static/img/logo_plu.png" alt="pluviophile logo" class="logo"></a>
+                <div class="row logolol">
+                    <a href="index.html"><img src="static/img/logo_plu.png" class="logo"></a>
+                    <a href="index.html"><img src="static/img/logo_plu_black.png" alt="Pluviophile" class="logo-black"></a>
                     <ul class="main-nav js--main-nav">
                         <li class="active"><a href="index.html">Main</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="dozy.html">Dozy</a></li>
                         <li><a href="as.html">A/S</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">COntact</a></li>
                         <li><a href="resource.html"><div class="res">resource</div></a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
-            </nav>
+            </nav>            
+        </header>
+        <section class="section-features js--section-features" id="features">
             <div class="all js--wp-1">
                 <div class="floating-dozy" id="scene">
                     <img src="static/img/floating_dozy.png">
@@ -39,8 +79,12 @@
             <div class="gotodozy">
                 <a href="dozy.html"><img src="static/img/gotodozy.png"></a>
             </div>
-        </header>
-                
+            
+            <div class="gotoimg">
+                <a href="resource.html"><img src="static/img/gotoimg.png"></a>
+            </div>
+        </section>
+        
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>

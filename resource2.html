@@ -9,8 +9,8 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="static/css/scroll.css">
-        <link rel="stylesheet" type="text/css" href="static/css/style_2.css">
-        <link rel="stylesheet" type="text/css" href="static/css/queries_2.css">
+        <link rel="stylesheet" type="text/css" href="static/css/index.css">
+        <link rel="stylesheet" type="text/css" href="static/css/queries.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
         
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
@@ -39,11 +39,13 @@
             </nav>            
         </header>
                 
-        <section id="forth" class="main__section main__section--4">
+        <section id="forth" class="main__section main__section--4"><div class="row">
             <h3>배경화면 > {{title}}</h3>
+            </div>
             <div class="row">    
             <div class="row world_row2">
-            <div class="imgrow2 wallp js--wp-3"><img :src="'resources/background/'+item.tablet"><div class="wallp-text">Tablet Wallpaper 1920 X 1080</div></div>
+            <div class="imgrow2 wallp js--wp-3"><img :src="'resources/background/'+item.desktop"><div class="wallp-text">Desktop Wallpaper 1080 X 1920</div></div>
+            <div class="imgrow2 wallp js--wp-3"><img :src="'resources/background/'+item.tablet"><div class="wallp-text">Tablet Wallpaper 1024 X 1024</div></div>
             <div class="imgrow2 wallp js--wp-3"><img :src="'resources/background/'+item.mobile"><div class="wallp-text">Mobile Wallpaper 1080 X 1920</div></div>
             </div>
                 
@@ -51,11 +53,12 @@
             <button type="button" class="download" id="download" onclick="downloadFunction()">다운로드 하기 <i class="fa fa-download"></i></button>
                 
             <div class="buttonse" id="buttonse">
-                <a :download="item.title" :href="'resources/background/'+item.tablet" :title="item.title"><button class="down-top" value="">Tablet <span id="secondText">(1920  X 1080)</span></button></a>
+                <a :download="item.title" :href="'resources/background/'+item.desktop" :title="item.title"><button class="down-top" value="">Desktop <span id="secondText">(1920  X 1080)</span></button></a>
                 
-                <a :download="item.title" :href="'resources/background/'+item.tablet" :title="item.title"><button class="down-mid" value="">Mobile <span id="secondText">(1080  X 1920)</span></button></a>
+                <a :download="item.title" :href="'resources/background/'+item.tablet" :title="item.title"><button class="down-mid" value="">Tablet <span id="secondText">(1024  X 1024)</span></button></a>
                 
-<!--                <a download="달밤의 도지" href="static/img/illust1.png" title="달밤의 도지"><button class="down-bot" value="">Desktop & Mobile </button></a>-->
+                <a :download="item.title" :href="'resources/background/'+item.mobile" :title="item.title"><button class="down-bot" value="">Mobile <span id="secondText">(1080  X 1920)</span></button></a>
+                
             </div>
                 
             <div class="row world_row2 twoinarow">

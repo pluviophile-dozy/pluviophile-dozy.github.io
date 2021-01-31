@@ -9,8 +9,8 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="static/css/scroll.css">
-        <link rel="stylesheet" type="text/css" href="static/css/style_2.css">
-        <link rel="stylesheet" type="text/css" href="static/css/queries_2.css">
+        <link rel="stylesheet" type="text/css" href="static/css/index.css">
+        <link rel="stylesheet" type="text/css" href="static/css/queries.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
         
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
@@ -40,13 +40,14 @@
         </header>
 
         <section id="forth" class="main__section main__section--4">
-            <h3>배경화면</h3>
+            <div class="row">
+            <h3>배경화면</h3></div>
             <div class="row" v-for="row in resources_div">
                 <div class="col span-1-of-3 hoveri" v-for="item in row">
                     <img :src="'resources/background/'+item.tablet" alt="" class="app-screen imgn">
                     <div @click="location.href='resource2.html?title='+item.title"><div class="overlay">
                         <div class="img-title">{{item.title}}</div>
-                        <div class="img-icon">
+                        <div class="img-icon"> 
                             <a :download="item.title" :href="'resources/background/'+item.tablet" :title="item.title"><i class="fa fa-download"></i></a>
                         </div>
                     </div></div>
