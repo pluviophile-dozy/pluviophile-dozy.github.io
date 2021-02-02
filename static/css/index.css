@@ -1086,7 +1086,7 @@ footer p {
 
 .gotodozy {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 150px;
 }
 
@@ -1100,7 +1100,7 @@ footer p {
 
 .gotoimg {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 300px;
 }
 
