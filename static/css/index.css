@@ -1090,6 +1090,14 @@ footer p {
     top: 150px;
 }
 
+.gotodozy a{
+    border: none;
+}
+
+.gotoimg a {
+    border: none;
+}
+
 .gotoimg {
     position: absolute;
     right: 0;

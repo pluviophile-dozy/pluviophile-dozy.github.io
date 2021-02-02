@@ -169,8 +169,8 @@
     .img-title { font-size: 14px; }
     .twoinarow { margin-top: 5%; }
     
-.gotodozy {   top: 100px;}
-.gotoimg {    top: 150px;}
+.gotodozy {   top: 70px;}
+.gotoimg {    top: 115px;}
 .gotodozy img {    width: 100px;}
 .gotoimg img { width: 100px;}
 .floating-dozy {
@@ -179,6 +179,9 @@
     position: relative;
     z-index: 1;
 }    
+    #layer {
+        position: relative;
+    }
     
 }
 
@@ -189,19 +192,16 @@
     section { padding: 25px 0; }
     .contact-form {width: 100%; }
 
-.gotodozy {
-    top: 200px;
-}
-
-.gotoimg {
-    top: 250px;
-}
-
-    .gotodozy img {
-    width: 100px;
+.gotodozy {   top: 70px;}
+.gotoimg {    top: 115px;}
+.gotodozy img {    width: 100px;}
+.gotoimg img { width: 100px;}
+.floating-dozy {
+    width: 50%;
+    margin: 80px auto;
+    position: relative;
+    z-index: 1;}
+#layer {
+        position: relative;
     }
-
-    .gotoimg img {
-    width: 100px;
-    }
-}
+}    
