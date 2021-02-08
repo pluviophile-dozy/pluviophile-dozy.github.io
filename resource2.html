@@ -126,7 +126,8 @@
 
                 let text = await this.readTextFile("resources/resources.yml");
                 this.resources = YAML.parse(text);
-                this.resources_div = this.divideData(this.resources.background, 3);
+
+                this.resources_div = this.divideData(this.shuffle(this.resources.background), 3);
 
                 for(let bg of this.resources.background){
                     console.log(bg.title);
@@ -148,6 +149,11 @@
                     const res = await axios.get(file);
                     return res.data;
                 },
+                shuffle(arr) {
+                    return arr.map(a => [Math.random(), a])
+                        .sort((a, b) => a[0] - b[0])
+                        .map(a => a[1]);
+                }
             }
         })
     </script>
