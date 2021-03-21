@@ -183,7 +183,31 @@
     #layer {
         position: relative;
     }
-    
+    .tongpan h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+    .tongpan h4 {
+    font-size: 12px;
+}
+    .detailpage {
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+    .float{
+	position:fixed;
+	width:90px;
+	height:45px;
+	top:120px;
+	right:30px;
+	background-color:#1B1F5B;
+    color: white;
+	border-radius:30px;
+	text-align:center;
+    font-size: 15px;
+}
 }
 
 

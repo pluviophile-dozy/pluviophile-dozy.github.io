@@ -1182,6 +1182,7 @@ footer p {
 	border-radius:30px;
 	text-align:center;
     font-size: 20px;
+    z-index:5;
 }
 
 .checko input{
