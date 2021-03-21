@@ -1304,6 +1304,7 @@ table.orderchoice2 td {
 
 #orderpage {
     display: none;
+    z-index: 5;
 }
 
 
