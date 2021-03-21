@@ -57,6 +57,7 @@
     }
     
     .contact-form { width: 80%; }
+     .order-form { width: 90%; }
     
     .img-title { font-size: 16px; }
 }
@@ -191,6 +192,7 @@
 @media only screen and (max-width: 480px) {
     section { padding: 25px 0; }
     .contact-form {width: 100%; }
+    .order-form {width: 90%; }
 
 .gotodozy {   top: 100px;}
 .gotoimg {    top: 135px;}
