@@ -67,102 +67,20 @@
                 <br>
             </div>
             
-            <button href="#" class="float" onclick="myFunction()">주문하기
-            </button>
-            <div href="#" class="floating" id="orderpage">
-            <form method="post" action="#" class="order-form">
-                <h4>주문서</h4>
-            <table class="orderchoice">
-            <col style=”width:50%;”>
-            <col style=”width:50%;”>
-              <tr class="btmborder">
-                <th>주문 제품</th>
-                <th>수량</th>
-              </tr>
-              <tr>
-                <td>코지 세트</td>
-                <td><input class="qty" id="cozy" name="cozy" type="number" placeholder="0"></td>
-              </tr>
-              <tr>
-                <td>도지 세트</td>
-                <td><input class="qty" id="dozy" name="dozy" type="number" placeholder="0"></td>
-              </tr>
-            <tr>
-                <td>도지코지 세트</td>
-                <td><input class="qty" id="docozy" name="docozy" type="number" placeholder="0"></td>
-              </tr>
-            </table>
-                
-                          
-            <h4 class="btmborder lefttab topspace">주문자 정보</h4>
             
-            <table class="orderchoice2">
-            <colgroup>
-            <col style=”width:40%;”>
-            <col style=”width:60%;”>
-            </colgroup>
-              <tr>
-                <td width="30%">이름</td>
-                <td width="70%"><input name="name" type="text" placeholder="홍길동"></td>
-              </tr>
-              <tr>
-                <td>휴대전화</td>
-                <td><input name="tel" type="text" placeholder="010-3975-0741"></td>
-              </tr>
-            <tr>
-                <td>우편번호</td>
-                <td>
- <input type="text" name="zip"/>
-<button type="button" style="width:60px; height:32px;" onclick="openZipSearch()">검색</button><br>
-</td>
-              </tr>
-                <tr>
-                <td>주소</td>
-                <td>
-<input type="text" name="addr1" ></td>
-              </tr>
-                <tr>
-                <td>상세주소</td>
-                <td>
-<input type="text" name="addr2"></td>
-              </tr>
-            </table>        
-        <br>
-           <table class="orderchoice">
-            <colgroup>
-            <col style=”width:40%;”>
-            <col style=”width:60%;”>
-            </colgroup>
-              <tr class="topspacey btmborder">
-                <th  width="40%">결제금액</th>
-                <th width="60%"></th>
-              </tr>
-              <tr>
-                <td>공급가액</td>
-                <td class="righttab"><span id="addedamount"></span>원</td>
-              </tr>
-              <tr>
-                <td>배송비</td>
-                <td class="righttab">3,000원</td>
-              </tr>
-
-            </table>
-         <br>
-            <table class="orderchoice">
-              <tr class="topspace btmborder">
-                <th width="50%">입금 예정 금액</th>
-                <th width="50%" class="righttab"><span id="finalamount" name="finalamount"></span>원<input id="finalamount2" type="hidden" name="finalamount2" value="0"></th>
-              </tr>
-              <tr>
-                <td width="30%">입금자명</td>
-                <td width="70%"><input name="name_bank" type="text" placeholder="홍길동"></td>
-              </tr>
-            </table>
-            <div class="checko"> <a href="dozy_ordered.html">
-            <input class="checkout" type="button" onclick="sendEmail()" value="결제하기"></a> </div> 
-                </form>
-            </div>
             
+            
+            <button href="#" class="float" onclick="showPopup(true)">주문하기
+            </button>     
+            
+            <div id="popup" class="hide">
+  <div class="content">
+    <p>
+      아직 판매가 시작되지 않았습니다!
+    </p>
+    <button class="smallbt" onclick="closePopup()">닫기</button>
+  </div>
+</div>
             
             <div class="row js--wp-1 detailpage">
             <img src="static/img/detailpage.png">
@@ -225,6 +143,8 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 <script>
+
+    
 function openZipSearch() {
 new daum.Postcode({
     oncomplete: function(data) {
@@ -238,15 +158,25 @@ new daum.Postcode({
 $(document).ready(function() {
     $(".qty").on("change keyup",calculateTotal)
 })
-    
-function myFunction() {
-  document.getElementById("orderpage").style.display = "block";
-}
-    
-function display() {
-   document.getElementById("popup1").style.display = "block"; 
+  
+function showPopup(hasFilter) {
+	const popup = document.querySelector('#popup');
+  
+  if (hasFilter) {
+  	popup.classList.add('has-filter');
+  } else {
+  	popup.classList.remove('has-filter');
+  }
+  
+  popup.classList.remove('hide');
 }
 
+function closePopup() {
+	const popup = document.querySelector('#popup');
+  popup.classList.add('hide');
+}
+
+    
 </script>
 <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
