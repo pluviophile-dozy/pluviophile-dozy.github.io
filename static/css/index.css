@@ -1358,3 +1358,7 @@ table.orderchoice2 td {
   margin-top: 15px;
     padding: 5px;
 }
+
+.mob {
+    display: none;
+}
