@@ -1212,6 +1212,8 @@ footer p {
 .floating{
 	position:fixed;
 	width:350px;
+    overflow: scroll;
+    overflow: -webkit-overflow-scrolling: touch;
 	height:85%;
 	top:150px;
 	right:0px;
