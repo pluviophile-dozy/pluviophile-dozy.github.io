@@ -67,11 +67,14 @@
                 <br>
             </div>
             
-            <button href="#" class="float mob" onclick="myFunction()">주문하기
-            </button>
+            <button href="#" class="float" onclick="myFunction()">주문하기
+            </button>   
+            <button href="#" class=" mob" onclick="myFunction2()">주문하기
+            </button> 
             <div href="#" class="floating" id="orderpage">
             <form method="post" action="#" class="order-form">
                 <h4>주문서</h4>
+                <a class="close" href="#popup1" onclick="closefunc()">×</a>
             <table class="orderchoice">
             <col style=”width:50%;”>
             <col style=”width:50%;”>
@@ -92,8 +95,7 @@
                 <td><input class="qty" id="docozy" name="docozy" type="number" placeholder="0"></td>
               </tr>
             </table>
-                
-                          
+                         
             <h4 class="btmborder lefttab topspace">주문자 정보</h4>
             
             <table class="orderchoice2">
@@ -158,8 +160,8 @@
                 <td width="70%"><input name="name_bank" type="text" placeholder="홍길동"></td>
               </tr>
             </table>
-            <div class="checko"> <a href="dozy_ordered.html">
-            <input class="checkout" type="button" onclick="sendEmail()" value="결제하기"></a> </div> 
+            <div class="checko">
+            <input class="checkout" type="button" onclick="sendEmail()" value="결제하기"> </div> 
                 </form>
             </div>
             
@@ -244,9 +246,15 @@ function myFunction() {
   document.getElementById("orderpage").style.display = "block";
 }
     
-function display() {
-   document.getElementById("popup1").style.display = "block"; 
+function myFunction2() {
+  document.getElementById("orderpage").style.display = "block";
 }
+    
+    
+function closefunc() {
+  document.getElementById("orderpage").style.display = "none";
+}
+
 
 </script>
 <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
@@ -323,8 +331,7 @@ function display() {
                 .then((res) => {
                     // 성공
                     console.log('success :', res.text);
-                    display();
-                    location.reload();  // 새로고침
+location.replace("dozy_ordered.html"); // 새로고침
                 }, (err) => {
                     // 에러
                     console.log('error :', err);

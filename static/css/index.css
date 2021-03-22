@@ -1157,6 +1157,16 @@ footer p {
     padding-bottom: 20px;
 }
 
+.checkouty h3 {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
+
 .tongpan h4 {
     font-size: 15px;
     text-align: center;
@@ -1337,8 +1347,8 @@ table.orderchoice2 td {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
         text-align: center;
 }
-.checkout {
-    width: 600px;
+.checkouty {
+    width: 50%;
     height: 500px;
     margin: 0 auto;
 }
@@ -1362,3 +1372,11 @@ table.orderchoice2 td {
 .mob {
     display: none;
 }
+
+.righttab input{
+    border: none;
+}
+
+.close       { position: absolute; top: 20px; right: 30px; transition: all 200ms; font-size: 30px; font-weight: bold; text-decoration: none; color: #333; }
+
+.order-form a {border-bottom: none;color:black;}

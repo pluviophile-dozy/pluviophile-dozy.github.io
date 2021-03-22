@@ -56,12 +56,17 @@
 
         <section class="section-form">
             <div class="row js--wp-1 tongpan">
-            <div class="checkout">
+            <div class="checkouty">
             <h3>주문이 정상적으로 완료되었습니다!</h3>
             <table class="orderchoice3">
               <tr>
                 <th width="20%">계좌번호</th>
-                <th width="80%" class="righttab">3333-16-8802510 카카오뱅크 (예금주: 권서현)</th>
+                <th width="80%" class="righttab">               <p id="p1">카카오뱅크 3333-16-8802510 (예금주: 권서현)
+                </p></th>
+              </tr>
+              <tr>
+                <th width="20%"></th>
+                <th width="80%" class="righttab">          <button onclick="copyToClipboard('#p1')">계좌번호 복사하기</button></th>
               </tr>
               <tr>
                 <th width="20%">입금마감</th>
@@ -105,7 +110,7 @@ window.onload = function() {
 
 var d = new Date();
 
-var month = d.getMonth() - 1;
+var month = d.getMonth() + 1;
 var date = d.getDate() + 1;
 var hour = d.getHours();
 
@@ -113,8 +118,20 @@ var hour = d.getHours();
 // Output the result in an element with id="demo"
 document.getElementById("demo").innerHTML = month + "월 " + date + "일 " + hour + "시까지 ";
 }
+
 </script>
 
+    <script>
+    
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  alert("복사하였습니다!")
+  $temp.remove();
+}
+    </script>
 
     </body>  
     
