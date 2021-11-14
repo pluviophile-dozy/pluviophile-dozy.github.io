@@ -172,14 +172,15 @@
         type: 'POST',
         data: {'type': type, 'telnum': telnum,},
         dataType:"json",
-        success:function(jqXHR) {
+        success:function(data, jqXHR) {
         console.log('success!');
-        if (type == 'ios') {
-            location.replace("successi.html"); 
-        }
-        else if (type == 'android') {
-            location.replace("successa.html"); 
-        }},
+//        if (type == 'ios') {
+//            location.replace("successi.html"); 
+//        }
+//        else if (type == 'android') {
+//            location.replace("successa.html"); 
+//        }
+        },
         error:function(jqXHR) {alert("error")},
         complete:function(jqXHR) { }
     })
