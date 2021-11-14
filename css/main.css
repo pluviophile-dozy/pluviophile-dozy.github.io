@@ -705,3 +705,50 @@ h3 {
 .world {
     display: none;
 }
+
+.floating-buttons {
+    position: fixed;
+    width: 40px;
+    height: 100px;
+    bottom: 20px;
+    right: 20px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    z-index: 7;
+
+}
+
+.icon-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+}
+
+.icon-circle i {
+    width: 100%;
+    height: auto;
+    color: white;
+    z-index: 11;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.icon-circle2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+}
+
+.icon-circle2 i {
+    width: 100%;
+    height: auto;
+    color: white;
+    z-index: 11;
+    font-size: 16px;
+    margin-top: 20px;
+}
