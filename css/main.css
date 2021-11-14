@@ -449,7 +449,7 @@ h3 {
     width:30%;
     margin: 0 auto;
     animation: leaves 1.5s ease-in-out infinite alternate;
-        -webkit-animation: leaves 1.5s ease-in-out infinite alternate;
+    -webkit-animation: leaves 1.5s ease-in-out infinite alternate;
     
 }
 
@@ -535,9 +535,15 @@ h3 {
 .high {
     background-color: #282561;
     padding: 2px;
+    margin:60px 0px 0px 0px;
 }
 
 .rest {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.rest2 {
     width: 55%;
     margin: 0 auto;
 }
@@ -557,6 +563,13 @@ h3 {
     font-weight: lighter;
 }
 
+.rest2 p {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: lighter;
+}
+
 .buttons {
     width: 90%;
     display: flex;
@@ -564,6 +577,10 @@ h3 {
 }
 
 .buttons2 {
+    width: 90%;
+    margin: 0 auto;
+}
+.buttons3 {
     width: 90%;
     margin: 0 auto;
 }
@@ -679,4 +696,8 @@ h3 {
 .highlighted {
     width: 83%;
     margin: 0 auto;
+}
+
+.h2t {
+    display: flex;align-items: flex-end;padding-left: 480px;
 }
