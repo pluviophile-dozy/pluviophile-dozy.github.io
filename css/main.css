@@ -144,7 +144,11 @@ button {
     margin: 0px;
     border-bottom: 1.5px solid #fff;
     font-weight: 200;
--webkit-appearance:none;
+
+}
+
+input[type="tel"]#numberin {
+    -webkit-appearance:none;
 }
 
 input[type="number"]::-webkit-inner-spin-button {

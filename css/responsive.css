@@ -99,8 +99,8 @@ input[type="button"]#send{font-size: 18px;}
 
 @media only screen and (max-width: 426px) {
 #numberin {    font-size: 56px;    width: 70px;}
-    .title-left h2 {font-size: 27px;}
-    .title-right h2 {font-size: 27px;}
+    .title-left h2 {font-size: 26px;}
+    .title-right h2 {font-size: 26px;}
 #value {font-size: 56px;    width: 70px;}
 #value2 {font-size: 56px;    width: 70px;}
 .h2t {
@@ -111,7 +111,7 @@ input[type="button"]#send{font-size: 18px;}
 .whole2 {    width: 90%;    margin-top: 0%;}
 .rest2 {    width: 100%;}
 .title-left {    width: 73%;   margin-top: -165px;}
-.title-right {    margin-top: 17%;    width: 100%;     margin-bottom: 100px;}
+.title-right {    margin-top: 17%;    width: 100%;     margin-bottom: 70px;}
 .title-right-one {    width: 100%;margin:0 auto;}
 .title-right-two {    width: 100%; margin: 0 auto;}
 #section2 .btm-text h4 {    font-size: 18px;    font-weight: 200;
