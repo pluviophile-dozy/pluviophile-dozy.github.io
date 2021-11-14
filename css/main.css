@@ -701,3 +701,7 @@ h3 {
 .h2t {
     display: flex;align-items: flex-end;padding-left: 480px;
 }
+
+.world {
+    display: none;
+}
