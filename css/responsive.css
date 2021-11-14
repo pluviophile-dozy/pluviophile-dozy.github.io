@@ -99,27 +99,26 @@ input[type="button"]#send{font-size: 18px;}
 
 @media only screen and (max-width: 426px) {
 #numberin {    font-size: 56px;    width: 70px;}
-    .title-left h2 {font-size: 40px;}
-    .title-right h2 {font-size: 40px;}
+    .title-left h2 {font-size: 28px;}
+    .title-right h2 {font-size: 28px;}
 #value {font-size: 56px;    width: 70px;}
 #value2 {font-size: 56px;    width: 70px;}
 .h2t {
-    width: 400px; display: inline-flex;align-items: flex-end;padding-left: 0px;
+    width: 400px; display: inline-flex;align-items: flex-end;padding-left: 30px;
 }
-
-.logo {	line-height: 20px;	top: 25px;    left: 20px;}
+.logo {	line-height: 20px;	top: 25px;    left: 10px;}
 .logo img {width: 80%;}
 .whole2 {    width: 90%;    margin-top: 0%;}
 .rest2 {    width: 100%;}
 .title-left {    width: 73%;   }
-.title-right {    margin-top: 60%;    width: 99%;     margin-bottom: 170px;}
+.title-right {    margin-top: 40%;    width: 99%;     margin-bottom: 100px;}
 .title-right-one {    width: 80%;margin:0 auto;}
 .title-right-two {    width: 93%; margin: 0 auto;}
 #section2 .btm-text h4 {    font-size: 18px;    font-weight: 200;
 }
-.whole {    width: 98%;    margin-top: 5%;}
-.rest {    width: 92%;}
-.rest h2 {    font-size: 53px;margin-bottom: 30px;margin-top: 30px;}
+.whole {    width: 98%;    margin-top: 0%;}
+.rest {    width: 98%;}
+.rest h2 {    font-size: 36px;margin-bottom: 30px;margin-top: 30px;}
 .lefty {        width: 100%;        margin: 0 auto;}
 .righty { width: 100%;margin: 0 auto;text-align: center;margin-top: 20px;}
 .lefty h3 {    font-size: 24px;}
@@ -128,14 +127,15 @@ input[type="button"]#send{font-size: 18px;}
 .righty img {    width: 80%;text-align: center;}
 .whole h3 {    font-size: 20px;}
 .rest p {font-size: 16px;}
-#telnum{font-size: 16px;}
-input[type="button"]#send{font-size: 16px;}
+#telnum{font-size: 12px;margin:0;}
+input[type="button"]#send{font-size: 12px;}
 .checkboxone{padding-left: 10px;}
 .checkboxes {padding-left: 10px;}
 .container {    font-size: 16px;}
+    .lefty {margin-top: 10%;}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 375px) {
 
 }
 
