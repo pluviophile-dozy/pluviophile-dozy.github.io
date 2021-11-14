@@ -128,7 +128,7 @@ input[type="button"]#send{font-size: 18px;}
 .whole h3 {    font-size: 20px;}
 .rest p {font-size: 16px;}
 #telnum{font-size: 12px;margin:0;}
-input[type="button"]#send{font-size: 12px;padding: 15px;-webkit-appearance:none;}
+input[type="button"]#send{font-size: 12px;padding: 15px;}
 .checkboxone{padding-left: 10px;}
 .checkboxes {padding-left: 10px;}
 .container {    font-size: 16px;}

@@ -186,6 +186,7 @@ input[type=button]#send{
       padding: 20px;
     margin-left: -10px;
      font-size: 22px;
+    -webkit-appearance:none;
 }
 
 input[type=button]#survey{
@@ -289,6 +290,7 @@ input[type=checkbox]{
 #send {
     background: none;
     cursor: pointer;
+    -webkit-appearance:none;
 }
 
 html body [data-ca3_iconfont="ETmodules"]::before {
