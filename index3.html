@@ -137,7 +137,7 @@
         </div>
     </div>
     
-    <script type="module">
+<script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
@@ -161,7 +161,7 @@
   const analytics = getAnalytics(app);
 </script>
 
-    <script type="text/javascript">
+<script type="text/javascript">
         
     // 이메일 보내기 함수
     function sendEmail() {            
@@ -190,24 +190,30 @@
             alert('전화번호를 입력해 주세요.')
             return;
         }
+        
+        firebase.database().ref('Demo').set({
+                        type: type,
+                        phoneNum: telnum                    
+                    });
 
-    $.ajax({
-        url: 'http://15.164.6.92:8080/preUser',
-        type: 'POST',
-        data: {"type": type, "phoneNum": telnum},
-        dataType:"json",
-        success:function(data, jqXHR) {
-        console.log('success!');
-//        if (type == 'ios') {
-//            location.replace("successi.html"); 
-//        }
-//        else if (type == 'android') {
-//            location.replace("successa.html"); 
-//        }
-        },
-        error:function(jqXHR) {alert("error")},
-        complete:function(jqXHR) { }
-    })
+
+//    $.ajax({
+//        url: 'http://15.164.6.92:8080/preUser',
+//        type: 'POST',
+//        data: {"type": type, "phoneNum": telnum},
+//        dataType:"json",
+//        success:function(data, jqXHR) {
+//        console.log('success!');
+////        if (type == 'ios') {
+////            location.replace("successi.html"); 
+////        }
+////        else if (type == 'android') {
+////            location.replace("successa.html"); 
+////        }
+//        },
+//        error:function(jqXHR) {alert("error")},
+//        complete:function(jqXHR) { }
+//    })
     }
     </script>
 
