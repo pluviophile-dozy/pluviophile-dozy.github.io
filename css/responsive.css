@@ -99,8 +99,8 @@ input[type="button"]#send{font-size: 18px;}
 
 @media only screen and (max-width: 426px) {
 #numberin {    font-size: 56px;    width: 70px;}
-    .title-left h2 {font-size: 28px;}
-    .title-right h2 {font-size: 28px;}
+    .title-left h2 {font-size: 27px;}
+    .title-right h2 {font-size: 27px;}
 #value {font-size: 56px;    width: 70px;}
 #value2 {font-size: 56px;    width: 70px;}
 .h2t {
@@ -110,20 +110,20 @@ input[type="button"]#send{font-size: 18px;}
 .logo img {width: 80%;}
 .whole2 {    width: 90%;    margin-top: 0%;}
 .rest2 {    width: 100%;}
-.title-left {    width: 73%;   margin-top: -200px;}
-.title-right {    margin-top: 20%;    width: 99%;     margin-bottom: 150px;}
+.title-left {    width: 73%;   margin-top: -165px;}
+.title-right {    margin-top: 17%;    width: 100%;     margin-bottom: 100px;}
 .title-right-one {    width: 100%;margin:0 auto;}
 .title-right-two {    width: 100%; margin: 0 auto;}
 #section2 .btm-text h4 {    font-size: 18px;    font-weight: 200;
 }
-.whole {    width: 100%;    margin-top: -80px;}
+.whole {    width: 100%;    margin-top: -100px;}
 .rest {    width: 100%;}
 .rest h2 {    font-size: 50px;margin-bottom: 30px;margin-top: 30px;}
 .lefty {        width: 100%;        margin: 0 auto;}
 .righty { width: 100%;margin: 0 auto;text-align: center;margin-top: 20px;}
 .lefty h3 {    font-size: 24px;}
 .lefty p {    font-size: 16px;}
-.toge {    width: 90%;}
+.toge {    width: 98%;}
 .righty img {    width: 80%;text-align: center;}
 .whole h3 {    font-size: 20px;}
 .rest p {font-size: 16px;}
@@ -133,6 +133,7 @@ input[type="button"]#send{font-size: 12px;padding: 15px;}
 .checkboxes {padding-left: 10px;}
 .container {    font-size: 16px;}
     .lefty {margin-top: -100px;}
+    .buttons2 {margin-top:10px;}
 }
 
 @media only screen and (max-width: 375px) {
