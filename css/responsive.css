@@ -70,49 +70,38 @@ input[type="tel"]{      padding: 15px;    }
 }
 
 @media only screen and (max-width: 800px) {
+#numberin {    font-size: 60px;    width: 100px;}
+#value {font-size: 60px;    width: 100px;}
+#value2 {font-size: 60px;    width: 100px;}
+.h2t {padding-left: 50px;}
+.logo {	line-height: 20px;	top: 30px;    left: 30px;}
+.logo img {width: 80%;}
 .whole2 {    width: 90%;    margin-top: 0%;}
 .rest2 {    width: 100%;}
 .title-left {    width: 59%;   }
-.title-right {    margin-top: 48%;    width: 82%;     margin-bottom: 300px;}
+.title-right {    margin-top: 30%;    width: 82%;     margin-bottom: 120px;}
 .h2t {     padding-left: 0px;}
-.whole {    width: 95%;    margin-top: 5%;}
-.rest {    width: 65%;}
-.rest h2 {    margin-bottom: 100px;}
+.whole {    width: 95%;    margin-top: 0%;}
+.rest {    width: 80%;}
+.rest h2 {    font-size: 44px;margin-bottom: 60px;}
 .lefty {        width: 100%;        margin: 0 auto;}
 .righty { width: 100%;margin: 0 auto;text-align: center;margin-top: 20px;}
-.lefty h3 {    font-size: 42px;}
+.lefty h3 {    font-size: 24px;}
 .lefty p {    font-size: 18px;}
 .toge {    width: 84%;}
 .righty img {    width: 80%;text-align: center;}
+.whole h3 {    font-size: 24px;}
+.rest p {font-size: 18px;}
+#telnum{font-size: 18px;}
+input[type="button"]#send{font-size: 18px;}
+.checkboxone{padding-left: 10px;}
 }
 
 @media only screen and (max-width: 750px) {
-.title-left {    width: 55%;   }
-.title-left h2 {font-size: 48px;}
-.title-right {    margin-top: 60%;    width: 89%;     margin-bottom: 350px;}
-.title-right h2 {font-size: 48px;}
-.h2t {padding-left: 30px;}
-.whole {    width: 100%;    margin-top: 10%;}
-.rest {    width: 70%;}
-.rest h2 {    font-size: 75px;}
-.righty { margin-top: 60px;    }
-.toge {    width: 84%;}
-.whole2 h3 {    font-size: 42px;}
-.rest2 p {    font-size: 20px;}
+
 }
 
 @media only screen and (max-width: 640px) {
-.title-left {    width: 57%;   }
-.title-left h2 {font-size: 42px;}
-.title-right {    margin-top: 60%;    width: 90%;     margin-bottom: 280px;}
-.title-right h2 {font-size: 42px;}
-.h2t {padding-left: 0px;}
-.whole {    width: 100%;    margin-top: 15%;}
-.whole h3 {    font-size: 30px;}
-.rest {    width: 70%;}
-.rest h2 {    font-size: 65px;margin-bottom: 70px;}
-.rest p {    font-size: 19px;}
-.righty { margin-top: 50px;    }
-.toge {    width: 84%;}
+
 }
 
