@@ -131,7 +131,12 @@ button {
   margin-right: 0;
   margin-bottom: 0;
 }
+
+input[type="tel"]#numberin {
+    -webkit-appearance:none;
+}
 #numberin {
+    -webkit-appearance:none;
     background: none;
     box-shadow: none;
     outline: none;
@@ -147,9 +152,6 @@ button {
 
 }
 
-input[type="tel"]#numberin {
-    -webkit-appearance:none;
-}
 
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
