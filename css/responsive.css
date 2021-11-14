@@ -134,6 +134,8 @@ input[type="button"]#send{font-size: 12px;padding: 15px;}
 .container {    font-size: 16px;}
     .lefty {margin-top: -100px;}
     .buttons2 {margin-top:10px;}
+    #down {    bottom: 20px;}
+    .ca3-scroll-down-link {height: 30px; width: 30px; line-height: 30px;}
 }
 
 @media only screen and (max-width: 375px) {
