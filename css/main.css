@@ -141,6 +141,10 @@ input[type="tel"]#numberin {
     box-shadow: none;
     outline: none;
     border: none;
+    -webkit-background: none;
+    -webkit-box-shadow: none;
+    -webkit-outline: none;
+    -webkit-border: none;
     font-size: 106px;
     width: 130px;
     text-align: center;
