@@ -170,7 +170,7 @@
     $.ajax({
         url: 'http://15.164.6.92:8080/preUser',
         type: 'POST',
-        data: {'type': type, 'phoneNum': telnum,},
+        data: {"type": type, "phoneNum": telnum},
         dataType:"json",
         success:function(data, jqXHR) {
         console.log('success!');
