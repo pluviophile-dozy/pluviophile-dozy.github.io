@@ -112,8 +112,7 @@ input[type="button"]#send{font-size: 18px;}
 .title-right {    margin-top: 13%;    width: 100%;     margin-bottom: 170px;}
 .title-right-one {    width: 100%;margin:0 auto;}
 .title-right-two {    width: 100%; margin: 0 auto;}
-#section2 .btm-text h4 {    font-size: 18px;    font-weight: 200;
-}
+#section2 .btm-text h4 {    font-size: 18px;    font-weight: 200;}
 .whole {    width: 100%;    margin-top: -100px;}
 .rest {    width: 100%;}
 .rest h2 {    font-size: 50px;margin-bottom: 30px;margin-top: 30px;}
@@ -130,10 +129,10 @@ input[type="button"]#send{font-size: 12px;padding: 15px;}
 .checkboxone{padding-left: 10px;}
 .checkboxes {padding-left: 10px;}
 .container {    font-size: 16px;}
-    .lefty {margin-top: -100px;}
-    .buttons2 {margin-top:10px;}
-    #down {    bottom: 20px;}
-    .ca3-scroll-down-link {height: 30px; width: 30px; line-height: 30px;}
+.lefty {margin-top: -100px;}
+.buttons2 {margin-top:10px;}
+#down {    bottom: 20px;}
+.ca3-scroll-down-link {height: 30px; width: 30px; line-height: 30px;}
 }
 
 @media only screen and (max-width: 375px) {

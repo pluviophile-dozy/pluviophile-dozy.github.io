@@ -133,10 +133,8 @@ button {
 }
 
 input[type="tel"]#numberin {
-    -webkit-appearance:none;
 }
 #numberin {
-    -webkit-appearance:none;
     background: none;
     box-shadow: none;
     outline: none;
