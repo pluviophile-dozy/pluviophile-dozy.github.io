@@ -163,8 +163,11 @@ input[type="button"]#send{font-size: 12px;padding: 15px;}
 }
     .buttons img{
     width:40%;
-    
 }
+    input[type=button]#survey {
+        -webkit-appearance: none;
+        -webkit-border-radius: 37px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
