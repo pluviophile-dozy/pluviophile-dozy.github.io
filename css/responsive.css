@@ -110,26 +110,26 @@ input[type="button"]#send{font-size: 18px;}
 .whole2 {    width: 90%;    margin-top: 0%;}
 .rest2 {    width: 100%;}
 .title-left {    width: 73%;   margin-top: -100px;  margin-top: -120px; }
-.title-right {    margin-top: 24%;    width: 100%;     margin-bottom: 180px;}
+.title-right {    margin-top: 26%;    width: 100%;     margin-bottom: 200px;}
 .title-right-one {    width: 100%;margin:0 auto;}
 .title-right-two {    width: 100%; margin: 0 auto;}
-#section2 .btm-text h4 {    font-size: 18px;    font-weight: 200;}
+#section2 .btm-text h4 {    font-size: 14px;    font-weight: 200;}
 .whole {    width: 100%;    margin-top: 0px;}
 .rest {    width: 100%;}
 .rest h2 {    font-size: 50px;margin-bottom: 30px;margin-top: 30px;}
 .lefty {        width: 100%;        margin: 0 auto;margin-top: -110px;}
 .righty { width: 100%;margin: 0 auto;text-align: center;margin-top: 50px;}
-.lefty h3 {    font-size: 24px;}
-.lefty p {    font-size: 14px;padding-top: 12px;}
+.lefty h3 {    font-size: 24px;    font-weight: 600;}
+.lefty p {    font-size: 14px;padding-top: 12px;font-weight: 200;}
 .toge {    width: 98%;}
 .righty img {    width: 60%;text-align: center;}
 .whole h3 {    font-size: 19px;}
 .rest p {font-size: 15px;}
 #telnum{font-size: 12px;margin:0;}
 input[type="button"]#send{font-size: 12px;padding: 15px;}
-.checkboxone{padding-left: 10px;}
+.checkboxone{padding-left: 38px;}
 .checkboxes {padding-left: 10px;}
-.container {    font-size: 16px;}
+.container {    font-size: 14px;}
 .buttons2 {margin-top:10px;}
 #down {    bottom: 20px;}
 .ca3-scroll-down-link {height: 30px; width: 30px; line-height: 30px;}
