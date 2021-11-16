@@ -167,6 +167,10 @@ input[type="button"]#send{font-size: 12px;padding: 15px;}
     input[type=button]#survey {
         -webkit-appearance: none;
         -webkit-border-radius: 37px;
+        margin-left: 0px;
+    }
+    .whole2 {
+        margin-top:-120px;
     }
 }
 
