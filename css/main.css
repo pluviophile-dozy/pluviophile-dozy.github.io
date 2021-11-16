@@ -368,14 +368,14 @@ h3 {
     outline: none;
     border: none;
     font-size: 106px;
-    text-align: center;
+    text-align: right;
     color: #5751FF;
-    padding: 0px;
+    padding: 0px 5px 0px 0px;
     margin: 0px;
-    border-bottom: 1.5px solid #fff;
     font-weight: 200;
     width: 150px;
     animation: fade 3s linear forwards;
+    line-height: 0.8;
 }
 
 #value2 {
@@ -386,12 +386,12 @@ h3 {
     font-size: 106px;
     text-align: center;
     color: #5751FF;
-    padding: 0px;
+    padding: 10px 5px 0px 0px;
     margin: 0px  0px 0px 20px;
-    border-bottom: 1.5px solid #fff;
     font-weight: 200;
     width: 150px;
     animation: fade 3s linear forwards;
+    line-height: 0.8;
 }
 
 #section2 .btm-text {

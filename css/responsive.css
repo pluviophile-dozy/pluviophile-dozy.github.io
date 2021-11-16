@@ -102,9 +102,9 @@ input[type="button"]#send{font-size: 18px;}
 #numberin {    font-size: 56px;    width: 70px;}
 .title-left h2 {font-size: 26px;line-height: 1.5;}
 .title-right h2 {font-size: 26px;}
-#value {font-size: 56px;    width: 70px;}
-#value2 {font-size: 56px;    width: 70px;}
-.h2t {   width: 400px; display: inline-flex;align-items: flex-end;padding-left: 30px;}
+#value {font-size: 40px;    width: 70px;}
+#value2 {font-size: 40px;    width: 50px;}
+.h2t {   width: 400px; display: inline-flex;align-items: flex-end;padding-left: 40px;}
 .logo {	line-height: 20px;	top: 25px;    left: 10px;}
 .logo img {width: 80%;}
 .whole2 {    width: 90%;    margin-top: 0%;}
