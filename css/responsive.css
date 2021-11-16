@@ -70,7 +70,7 @@ input[type="tel"]{      padding: 15px;    }
 }
 
 @media only screen and (max-width: 800px) {
-#numberin {    font-size: 60px;    width: 100px;}
+#numberin {    font-size: 60px;    width: 100px;border-radius: 0;-webkit-appearance: none;}
 #value {font-size: 60px;    width: 100px;}
 #value2 {font-size: 60px;    width: 100px;}
 .h2t {padding-left: 50px;}
