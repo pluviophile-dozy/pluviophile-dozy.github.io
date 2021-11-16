@@ -78,7 +78,7 @@ input[type="tel"]{      padding: 15px;    }
 .logo img {width: 80%;}
 .whole2 {    width: 90%;    margin-top: 0%;}
 .rest2 {    width: 100%;}
-.title-left {    width: 59%;   }
+.title-left {    width: 59%;}
 .title-right {    margin-top: 30%;    width: 82%;     margin-bottom: 120px;}
 .h2t {     padding-left: 0px;}
 .whole {    width: 95%;    margin-top: 0%;}
@@ -109,18 +109,18 @@ input[type="button"]#send{font-size: 18px;}
 .logo img {width: 80%;}
 .whole2 {    width: 90%;    margin-top: 0%;}
 .rest2 {    width: 100%;}
-.title-left {    width: 73%;   margin-top: -100px;}
-.title-right {    margin-top: 22%;    width: 100%;     margin-bottom: 130px;}
+.title-left {    width: 73%;   margin-top: -100px;  margin-top: -10px; }
+.title-right {    margin-top: 24%;    width: 100%;     margin-bottom: 180px;}
 .title-right-one {    width: 100%;margin:0 auto;}
 .title-right-two {    width: 100%; margin: 0 auto;}
 #section2 .btm-text h4 {    font-size: 18px;    font-weight: 200;}
-.whole {    width: 100%;    margin-top: -100px;}
+.whole {    width: 100%;    margin-top: 0px;}
 .rest {    width: 100%;}
 .rest h2 {    font-size: 50px;margin-bottom: 30px;margin-top: 30px;}
 .lefty {        width: 100%;        margin: 0 auto;margin-top: -100px;}
-.righty { width: 100%;margin: 0 auto;text-align: center;margin-top: 20px;}
+.righty { width: 100%;margin: 0 auto;text-align: center;margin-top: 50px;}
 .lefty h3 {    font-size: 24px;}
-.lefty p {    font-size: 16px;}
+.lefty p {    font-size: 14px;padding-top: 12px;}
 .toge {    width: 98%;}
 .righty img {    width: 60%;text-align: center;}
 .whole h3 {    font-size: 19px;}
@@ -133,6 +133,9 @@ input[type="button"]#send{font-size: 12px;padding: 15px;}
 .buttons2 {margin-top:10px;}
 #down {    bottom: 20px;}
 .ca3-scroll-down-link {height: 30px; width: 30px; line-height: 30px;}
+    .order-form {
+        margin-top: 100px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
