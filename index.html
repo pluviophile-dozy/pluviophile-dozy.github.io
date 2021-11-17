@@ -18,23 +18,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="dist/fullview.min.js"></script>
     <script src="https://kit.fontawesome.com/2d41a59536.js" crossorigin="anonymous"></script>
-    <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '660942868251770');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=660942868251770&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
     
 </head>
 
@@ -55,7 +38,7 @@
         </div>
         
         <div class="title-left">
-        <h2>나는 평소 밤 <input type="number" id="numberin">시에 잠든다.</h2>
+        <h2>나는 평소 밤 <input type="number" id="numberin" min="0" max="24">시에 잠든다.</h2>
         </div>
         <a id="down" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
             
@@ -102,7 +85,7 @@
         
         <div class="checkboxone">
         <label class="container">
-        <input type="checkbox" value="iOS" id="iOS" checked="checked">개인정보 수집/이용에 동의합니다.<span class="checkmark"></span> <a href="" class="see">내용보기</a></label></div></form>
+        <input type="checkbox" value="iOS" id="iOS" checked="checked">(주)플루비오파일이 고객님의 개인정보 수집/이용함에 동의합니다.<span class="checkmark"></span></label></div></form>
             </div>
         </div>
                 <a id="down" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
