@@ -61,5 +61,6 @@ button.start_bt { width: 100px;        font-size: 16px;  padding:10px;  }
     .checkboxone {padding-left: 20px;margin-top:-10px;}
     #telnum {margin: 5px 0px;font-size: 14px;}
     input[type="button"]#send {font-size: 14px;}
+    .whole2 h3 {    font-size: 24px;}
     
 }
