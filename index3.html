@@ -97,7 +97,7 @@
                 <h3>깊은 잠을 만드는 <br> 
                         Dr.Dozy의 ASMR </h3>
                 <p>도지가 직접 개발한 수면 유도 소리, <br> 
-모노럴비트를 통해 쉽고 빠르게 깊은 잠으로 안내합니다. </p>
+                    모노럴비트를 통해 쉽고 빠르게 깊은 잠으로 안내합니다. </p>
             </div>
             <div class="righty">
                 <img src="src/asmr.png">
@@ -154,8 +154,12 @@
 
 <script type="text/javascript">
         
-    // 이메일 보내기 함수
-    function sendEmail() {            
+            (function() {
+            emailjs.init("user_FHcm6IarN4nZTRxxaHUHd");
+        })();
+        
+        
+        function sendEmail() {            
         var type = '';
 
         // input 값 받아오기
@@ -168,8 +172,8 @@
             console.log("android");
         }
         // input 값 받아오기
-        const telnum = document.getElementById('telnum').value;
-        console.log(telnum);
+        const phoneNum = document.getElementById('telnum').value;
+        console.log(phoneNum);
 
         // 양식 검증 : 빈칸이 있는지 체크 + 이메일 양식 체크
         if(type === ''){
@@ -177,28 +181,27 @@
             return;
         }
 
-        if(telnum === ''){
+        if(phoneNum === ''){
             alert('전화번호를 입력해 주세요.')
             return;
         }
 
-    $.ajax({
-        url: 'http://15.164.6.92:8080/preUser',
-        type: 'POST',
-        data: {"type": type, "phoneNum": telnum},
-        dataType:"json",
-        success:function(data, jqXHR) {
-        console.log('success!');
-        if (type == 'ios') {
-            location.replace("successi.html"); 
+        var form = {
+                "type" : type,
+                "phoneNum" : phoneNum
         }
-        else if (type == 'android') {
-            location.replace("successa.html"); 
-        }
-        },
-        error:function(jqXHR) {alert("error")},
-        complete:function(jqXHR) { }
-    })
+        $.ajax({
+            url: 'preUser',
+            type: 'POST',
+            contentType: 'application/json; charset=UTF-8',
+            data: JSON.stringify(form),
+            dataType:"text",
+            success:function(data, jqXHR) {
+                window.open("success.html", '_blank').focus();
+            },
+            error:function(jqXHR,error) {alert(error)},
+            complete:function(jqXHR) { }
+        })
     }
     </script>
 
