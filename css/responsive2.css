@@ -46,12 +46,12 @@ button.start_bt {        width: 150px;        font-size: 18px;    }
 @media only screen and (max-width: 450px){
 button.start_bt { width: 100px;        font-size: 16px;  padding:10px;  }
 .start {line-height: 0px;top:30px;right:30px;}
-    .whole3 {margin-top:0;position: fixed; top: 100px;}
+    .whole3 {margin-top:0;position: fixed; top: 100px;margin-left: 30px;}
     .whole4 {margin-top: 5%;}
     .lefty h3 {    font-size: 24px;}
     .lefty p {    font-size: 12px;}
     .righty2 img {width: 94%;}
-    .lefty {width: 90%;}
+    .lefty {width: 90%;margin-left: 30px;margin-top:0px;}
     .toge {height: 500px;}
     .whole {width:95%;}
     .container {font-size: 10px;}
