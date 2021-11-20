@@ -48,6 +48,7 @@ button.start_bt { width: 100px;        font-size: 16px;  padding:10px;  }
 .start {line-height: 0px;top:30px;right:30px;}
     .righty2 {padding-left: 0%;}
     .whole3 {margin-top:0;margin-left: 0px;}
+    .whole4 img {animation: none;}
     .whole4 {margin-top: 5%;}
     .lefty h3 {    font-size: 24px;}
     .lefty p {    font-size: 12px;}
