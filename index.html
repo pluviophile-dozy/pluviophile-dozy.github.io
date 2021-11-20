@@ -90,7 +90,7 @@
                 <p>내가 얼마나 잘 자고 있는지, <br>
 닥터도지의 똑똑한 인공지능이 수면 사이클을 측정합니다. </p>
             </div>
-            <div class="righty">
+            <div class="righty2">
                 <img id="zoomIn" src="src/graph.png">
             </div>
                 </div>
@@ -366,6 +366,9 @@
             keyboardScrolling: true,
             onScrollEnd: function (currentView, preView) {
               current = currentView[0].outerHTML.slice(16,17);
+              if (current != "1") {
+                  $('.whole3').css({'display':'none'});
+              }
               if (current == "2") {
                     $('#fadein').css({'display':'block'});
                     $('#slide').css({'display':'block'}); 

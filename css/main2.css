@@ -996,8 +996,8 @@ button.start_bt:hover {
 }
 
 #zoomIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
     -webkit-animation-duration: 1s;
     -webkit-animation-duration: var(--animate-duration);
     animation-duration: 1s;
@@ -1005,6 +1005,8 @@ button.start_bt:hover {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     display: none;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .imgtable {
